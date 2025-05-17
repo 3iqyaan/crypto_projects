@@ -34,7 +34,7 @@ make
 
 ##  System Requirements
 
-- **C++ Compiler**: GCC 10+ or Clang 12+ with support for C++20  
+- **C++ Compiler**: GCC 10+ or Clang 12+ with support for C++20 (to use span in implementation of Chinese Remainder Theorem)
 - **CMake**: Version 3.16 or newer  
 - **GNU Readline Library**: For building the CLI (install via package manager)
 

@@ -14,20 +14,13 @@ Includes a simple interactive CLI using GNU Readline for easy testing.
 
 ## Project Structure
 
-CryptMath/
-│
-├── include/ 
-│ └── crypt_math.hpp
-│
-├── src/ 
-│ └── crypt_math.cpp
-│
-├── cli/
-│ └── libtest_cli.cpp
-│
-├── CMakeLists.txt 
-├── README.md 
-└── .gitignore 
+- `include/` – Contains the header file `crypt_math.hpp` with all function declarations.
+- `src/` – Source file `crypt_math.cpp` with implementations of the library functions.
+- `cli/` – Command-line interface (`main.cpp`) built using GNU Readline.
+- `CMakeLists.txt` – Build configuration for CMake.
+- `build/` – Directory where compiled objects and executables are generated (ignored in Git).
+- `README.md` – Project documentation.
+
 
 ## Build and Run
 
@@ -36,4 +29,13 @@ mkdir build
 cd build
 cmake ..
 make
-./crypt-math-cli       
+./crypt-math-cli
+```
+
+##  System Requirements
+
+- **C++ Compiler**: GCC 10+ or Clang 12+ with support for C++20  
+- **CMake**: Version 3.16 or newer  
+- **GNU Readline Library**: For building the CLI (install via package manager)
+
+    
